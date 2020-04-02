@@ -39,5 +39,6 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   boardRow: {
+    flexDirection: 'row'
   },
 });

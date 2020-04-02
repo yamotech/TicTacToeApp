@@ -13,7 +13,9 @@ export default class Square extends Component {
 
 const styles = StyleSheet.create({
   square: {
-    width: 34,
-    height: 34,
+    width: 100,
+    height: 100,
+    borderColor: '#333',
+    borderWidth: 1,
   }
 })
