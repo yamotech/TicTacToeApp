@@ -2,17 +2,10 @@ import React, { Component } from 'react';
 import { StyleSheet, Button, View, Alert } from 'react-native';
 
 export default class Square extends Component {
-  _handleButtonPress = () => {
-    Alert.alert(
-      'Button pressed!',
-      'You did it!',
-    );
-  };
-
   render() {
     return (
       <View style={styles.square}>
-        <Button title={`${this.props.value}`} style={styles.button} onPress={this._handleButtonPress}/>
+        <Button title={`${this.props.value}`} style={styles.button} onPress={() => alert('click')}/>
       </View>
     );
   }
