@@ -5,7 +5,7 @@ export default class Square extends Component {
   render() {
     return (
       <View style={styles.square}>
-        <Text>aaa</Text>
+        <Text style={styles.text}>{this.props.value}</Text>
       </View>
     );
   }
@@ -17,5 +17,9 @@ const styles = StyleSheet.create({
     height: 100,
     borderColor: '#333',
     borderWidth: 1,
+  },
+  text: {
+    fontSize: 80,
+    textAlign: 'center'
   }
 })
