@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
 
-import Game from './components/Game';
+import Game from './src/Game';
 
 export default class App extends Component {
   render() {
