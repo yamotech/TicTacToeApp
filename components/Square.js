@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { StyleSheet, Button, View, Alert } from 'react-native';
+import React from 'react';
+import { StyleSheet, Button, View } from 'react-native';
 
 export default function Square(props) {
   return (
