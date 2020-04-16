@@ -1,21 +1,12 @@
 import React, { Component } from 'react';
 import { StyleSheet, Button, View, Alert } from 'react-native';
 
-export default class Square extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: '',
-    };
-  }
-
-  render() {
-    return (
-      <View style={styles.square}>
-        <Button title={`${this.state.value}`} style={styles.button} onPress={() => this.setState({ value: 'X'})}/>
-      </View>
-    );
-  }
+export default function Square(props) {
+  return (
+    <View style={styles.square}>
+      <Button title={`${props.value}`} style={styles.button} onPress={() => props.onPress()} />
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
