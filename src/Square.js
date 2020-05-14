@@ -1,10 +1,10 @@
 import React from 'react';
-import { StyleSheet, Button, TouchableOpacity } from 'react-native';
+import { StyleSheet, TouchableOpacity, Text } from 'react-native';
 
 export default function Square(props) {
   return (
     <TouchableOpacity style={styles.square} onPress={() => props.onPress()} >
-      <Button title={`${props.value}`} style={styles.button} />
+      <Text style={styles.button}>{props.value}</Text>
     </TouchableOpacity>
   );
 }
@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
     width: 100,
     height: 100,
     fontSize: 80,
+    lineHeight: 100,
     textAlign: 'center'
   }
 })
