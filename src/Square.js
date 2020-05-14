@@ -1,11 +1,11 @@
 import React from 'react';
-import { StyleSheet, Button, View } from 'react-native';
+import { StyleSheet, Button, TouchableOpacity } from 'react-native';
 
 export default function Square(props) {
   return (
-    <View style={styles.square}>
-      <Button title={`${props.value}`} style={styles.button} onPress={() => props.onPress()} />
-    </View>
+    <TouchableOpacity style={styles.square} onPress={() => props.onPress()} >
+      <Button title={`${props.value}`} style={styles.button} />
+    </TouchableOpacity>
   );
 }
 
