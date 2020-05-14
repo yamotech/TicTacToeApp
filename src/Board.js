@@ -10,7 +10,7 @@ export default class Board extends Component {
 
   render() {
     return (
-      <View>
+      <View style={styles.wrapper}>
         <View style={styles.boardRow}>
           {this.renderSquare(0)}
           {this.renderSquare(1)}
@@ -32,8 +32,10 @@ export default class Board extends Component {
 }
 
 const styles = StyleSheet.create({
-  status: {
+  wrapper: {
     marginBottom: 10,
+    borderColor: '#000',
+    borderWidth: 1,
   },
   boardRow: {
     flexDirection: 'row'
