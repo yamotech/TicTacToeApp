@@ -72,7 +72,7 @@ export default class Game extends Component {
           />
         </View>
         <View style={styles.gameInfo}>
-          <Text>{status}</Text>
+          <Text style={styles.gameStatus}>{status}</Text>
           <View>{moves}</View>
         </View>
       </View>
@@ -85,5 +85,9 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   gameBoard: {},
-  gameInfo: {}
+  gameInfo: {},
+  gameStatus: {
+    fontSize: 20,
+    textAlign: 'center',
+  }
 });
