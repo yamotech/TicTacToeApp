@@ -46,7 +46,7 @@ export default class Game extends Component {
 
     const moves = history.map((step, move) => {
       const desc = move ?
-        'Go to move #' + move:
+        '#' + move:
         'Go to game start';
 
       return (
@@ -73,7 +73,8 @@ export default class Game extends Component {
         </View>
         <View style={styles.gameInfo}>
           <Text style={styles.gameStatus}>{status}</Text>
-          <View>{moves}</View>
+          <View>{moves[0]}</View>
+          <View style={styles.flex}>{moves.slice(1, -1)}</View>
         </View>
       </View>
     );
@@ -86,6 +87,11 @@ const styles = StyleSheet.create({
   },
   gameBoard: {},
   gameInfo: {},
+  flex: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   gameStatus: {
     fontSize: 20,
     textAlign: 'center',
